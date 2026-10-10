@@ -1,7 +1,7 @@
 # This application will read the mailbox data (mbox.txt) and count the number of email messages per organization
 # (i.e. domain name of the email address) using a database with the following schema to maintain the counts.
 
-import re, sqlite3
+import sqlite3
 
 conn = sqlite3.connect('emaildb.sqlite')
 cur = conn.cursor()
